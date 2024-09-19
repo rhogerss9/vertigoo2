@@ -6,14 +6,15 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+
 :root{
     --gray-800:var(--gray-800);
-   --gray-600:var(--gray-800);
    --gray-600:var(--gray-600);
    --gray-400:var(--gray-400)
    --gray-200:var(--gray-200)
    --purple: #7c3aed;
-   
+   --white: #fff;
+
 } 
 
 header{
@@ -58,7 +59,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .login label{
@@ -73,6 +74,7 @@ main{
     border-radius: 0.25rem;
     color: var(--gray-800);
 }
+
 .login input::placeholder {
      color: var(--gray-400);
 }
@@ -80,6 +82,7 @@ main{
 .login input:focus {
     outline: 1px solid var(--purple);
 }
+
 .login a{
     color: var(--purple);
     text-decoration: none;
@@ -88,3 +91,15 @@ main{
 }
 .login a:hover{
     text-decoration: underline;
+}
+.login button {
+    margin-top: 1rem;
+    padding-block: 1rem;
+    width: 100%;
+    background: var(--purple);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+}
