@@ -5,21 +5,40 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
+
+:root{
+    --gray-800:var(--gray-800);
+   --gray-600:var(--gray-800);
+   --purple: #7c3aed;
+} 
 header{
     background-image: url(img/img.png);
-    background-size: cover;
+    background-size: cover;}
     
-    height: 8.375rem;
+.descrição p{
+    font-size: 0.8251rem;
+    color: var(--gray-600);
+}
+.input-box{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+.input-box div{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 3.7rem;
 }
-main{
-    padding-inline: 1.5rem;
-}
-.descrição h1{
+.login label{
+    font-size: 0.875rem;
     color: var(--gray-800);
-    margin-bottom: 1rem;
-    font-size: 1.5625rem;
+    font-weight: 600;
+}
+.login a{
+    color: var(--purple);
+    text-decoration: none;
+    font-size:0.875rem;
+    font-weight: 600;
+}
+.login a:hover{
+    text-decoration: underline;
 }
